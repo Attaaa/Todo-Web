@@ -38,6 +38,7 @@ body{
 
 .item{
     padding: 20px;
+    margin-bottom: 10px;
     background-color: whitesmoke;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, 0.3);
     font-size: 16px;
