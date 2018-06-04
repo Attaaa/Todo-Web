@@ -22,6 +22,7 @@ function setItem(){
 
         var btnHapus = document.createElement("button");
         btnHapus.setAttribute("class","btn-hapus");
+        btnHapus.setAttribute("onclick","hapus(event);");
         var textHapus = document.createTextNode("Hapus");
         btnHapus.appendChild(textHapus);
 
@@ -41,4 +42,9 @@ function setItem(){
         textInput.value = "";
     }
 
+}
+
+function hapus(e){
+    var item = e.target.parentElement.parentElement;
+    item.parentNode.removeChild(item);
 }
