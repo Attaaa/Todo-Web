@@ -15,12 +15,12 @@ body{
     margin-right: 20px;
     padding: 10px;
     font-size: 16px;
-    border: none;
-    transition: .3s ease;
+    transition: .3s linear;
 }
 
 .todo-input:focus{
-    outline: 1px solid rgba(0, 0, 0, 0.5);
+    margin-right: 20px;
+    padding: 10px;
 }
 
 .btn-tambah{
@@ -55,6 +55,7 @@ body{
     font-weight: 600;
     color: gray;
     display: flex;
+    animation: .35s contoh;
 }
 
 .item-selesai{
@@ -83,4 +84,9 @@ body{
 
 .btn-selesai{
     color: forestgreen;
+}
+
+@keyframes contoh {
+    from{opacity: 0;}
+    to{opacity: 1;}
 }
