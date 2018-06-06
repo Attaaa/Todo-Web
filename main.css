@@ -55,8 +55,9 @@ body{
     font-weight: 600;
     color: gray;
     display: flex;
+    opacity: 1;
     animation: .35s contoh;
-    transition: background-color .35s linear;
+    transition: background-color .35s linear, opacity .3s ease;
 }
 
 .item-selesai{

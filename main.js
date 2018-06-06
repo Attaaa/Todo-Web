@@ -51,7 +51,11 @@ function setItem(){
 
 function hapus(e){
     var item = e.target.parentElement.parentElement;
-    item.parentNode.removeChild(item);
+    item.style.opacity = "0";
+    setTimeout(
+        function(){item.parentNode.removeChild(item);},
+        300
+    );
 }
 
 function selesai(e){
