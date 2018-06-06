@@ -15,7 +15,12 @@ body{
     margin-right: 20px;
     padding: 10px;
     font-size: 16px;
-    border: 1px solid transparent;
+    border: none;
+    transition: .3s ease;
+}
+
+.todo-input:focus{
+    outline: 1px solid rgba(0, 0, 0, 0.5);
 }
 
 .btn-tambah{
@@ -26,6 +31,7 @@ body{
     font-size: 17px;
     cursor: pointer;
     border: 2px solid transparent;
+    transition: border .3s ease;
 }
 
 .btn-tambah:hover{
@@ -49,6 +55,15 @@ body{
     font-weight: 600;
     color: gray;
     display: flex;
+}
+
+.item-selesai{
+    background-color: forestgreen;
+    color: white;
+}
+
+.item-selesai .btn-hapus{
+    color: white;
 }
 
 .item-text{

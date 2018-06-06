@@ -4,8 +4,13 @@ function setItem(){
     var textInput = document.getElementById("todo");
     
     if (textInput.value == ""){
+
+        //Jika input kosong
         alert("Anda harus mengisi kegiatan yang ingin anda lakukan");
+
     } else {
+
+        //Mengambil elemen input
         var nodeText = document.createTextNode(textInput.value);
 
         var container = document.getElementById("ci");
@@ -28,6 +33,7 @@ function setItem(){
 
         var btnSelesai = document.createElement("button");
         btnSelesai.setAttribute("class","btn-selesai");
+        btnSelesai.setAttribute("onclick","selesai(event);");
         var textSelesai = document.createTextNode("Selesai");
         btnSelesai.appendChild(textSelesai);
 
@@ -47,4 +53,11 @@ function setItem(){
 function hapus(e){
     var item = e.target.parentElement.parentElement;
     item.parentNode.removeChild(item);
+}
+
+function selesai(e){
+    var btn = e.target;
+    var item = e.target.parentElement.parentElement;
+    item.setAttribute("class", "item item-selesai");
+    btn.parentNode.removeChild(btn);
 }
