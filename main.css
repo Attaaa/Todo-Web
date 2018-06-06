@@ -56,6 +56,7 @@ body{
     color: gray;
     display: flex;
     animation: .35s contoh;
+    transition: background-color .35s linear;
 }
 
 .item-selesai{
