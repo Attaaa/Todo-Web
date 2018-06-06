@@ -3,6 +3,10 @@ body{
     font-family: sans-serif;
 }
 
+button:focus{
+    outline: none;
+}
+
 .container-top{
     background-color: tomato;
     padding: 20px;
