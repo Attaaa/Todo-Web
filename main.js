@@ -10,7 +10,6 @@ function setItem(){
 
     } else {
 
-        //Mengambil elemen input
         var nodeText = document.createTextNode(textInput.value);
 
         var container = document.getElementById("ci");
