@@ -8,4 +8,4 @@ Clone or download this repository then copy this repository path on your local m
 
 ## Screenshot
 
-![](./ss.gif | width=700)
+![alt text](./ss.gif)
