@@ -1,6 +1,6 @@
 # To-do List Website
 
-Todo list website using vanilla js, css and html. Only for practice my web development skills.
+Todo list website using vanilla js, css and html.
 
 ## Installation
 
